@@ -1,9 +1,7 @@
 
     
     
-    
-    create table "retail_db"."raw"."online_retail_II" ("Invoice" text,"StockCode" text,"Description" text,"Quantity" integer,"InvoiceDate" text,"Price" float8,"Customer ID" integer,"Country" text)
-  ;
+    truncate table "retail_db"."raw"."online_retail_II";
     -- dbt seed --
     
           insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values

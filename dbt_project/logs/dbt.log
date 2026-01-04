@@ -949,3 +949,1503 @@ DETAIL:  Key (typname, typnamespace)=(online_retail_II, 16994) already exists.
 [0m04:32:34.804089 [debug] [MainThread]: An error was encountered while trying to flush usage events
 [0m04:32:34.804248 [debug] [MainThread]: An error was encountered while trying to flush usage events
 [0m04:32:34.809763 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:32:39.808722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa59b3c7bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa599b28ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa599b28e80>]}
+
+
+============================== 04:32:39.820463 | cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d ==============================
+[0m04:32:39.820463 [info ] [MainThread]: Running with dbt=1.11.2
+[0m04:32:39.824852 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error': 'None', 'use_colors': 'True', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/.dbt', 'write_json': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'profiles_dir': '/opt/airflow/.dbt', 'log_path': '/opt/airflow/dbt_project/logs', 'target_path': 'None', 'empty': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False'}
+[0m04:32:40.196936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa599b2af50>]}
+[0m04:32:40.282908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa599b2c370>]}
+[0m04:32:40.286212 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m04:32:40.373291 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m04:32:40.844069 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:32:40.846180 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:32:40.848215 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:32:40.902510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa597b55db0>]}
+[0m04:32:41.098586 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:32:41.111304 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:32:41.148227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa597bcfdc0>]}
+[0m04:32:41.150830 [info ] [MainThread]: Found 3 models, 1 seed, 463 macros
+[0m04:32:41.153134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa597bcfeb0>]}
+[0m04:32:41.157578 [info ] [MainThread]: 
+[0m04:32:41.160007 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:32:41.162200 [info ] [MainThread]: 
+[0m04:32:41.164757 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:32:41.173330 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:32:41.174380 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:32:41.219884 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:32:41.220523 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:32:41.222561 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:32:41.225323 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:32:41.227859 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:32:41.230399 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:32:41.239583 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.012 seconds
+[0m04:32:41.241006 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.011 seconds
+[0m04:32:41.243220 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:32:41.246265 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:32:41.250345 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now create_retail_db_raw_core)
+[0m04:32:41.251012 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now create_retail_db_raw_raw)
+[0m04:32:41.252990 [debug] [ThreadPool]: Creating schema "database: "retail_db"
+schema: "raw_core"
+"
+[0m04:32:41.255316 [debug] [ThreadPool]: Creating schema "database: "retail_db"
+schema: "raw_raw"
+"
+[0m04:32:41.263678 [debug] [ThreadPool]: Using postgres connection "create_retail_db_raw_core"
+[0m04:32:41.268315 [debug] [ThreadPool]: Using postgres connection "create_retail_db_raw_raw"
+[0m04:32:41.271300 [debug] [ThreadPool]: On create_retail_db_raw_core: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "create_retail_db_raw_core"} */
+create schema if not exists "raw_core"
+[0m04:32:41.273696 [debug] [ThreadPool]: On create_retail_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "create_retail_db_raw_raw"} */
+create schema if not exists "raw_raw"
+[0m04:32:41.275296 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:32:41.277169 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:32:41.283395 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.008 seconds
+[0m04:32:41.284769 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.008 seconds
+[0m04:32:41.286890 [debug] [ThreadPool]: On create_retail_db_raw_core: COMMIT
+[0m04:32:41.289850 [debug] [ThreadPool]: On create_retail_db_raw_raw: COMMIT
+[0m04:32:41.292508 [debug] [ThreadPool]: Using postgres connection "create_retail_db_raw_core"
+[0m04:32:41.294717 [debug] [ThreadPool]: Using postgres connection "create_retail_db_raw_raw"
+[0m04:32:41.297083 [debug] [ThreadPool]: On create_retail_db_raw_core: COMMIT
+[0m04:32:41.298801 [debug] [ThreadPool]: On create_retail_db_raw_raw: COMMIT
+[0m04:32:41.305065 [debug] [ThreadPool]: SQL status: COMMIT in 0.004 seconds
+[0m04:32:41.306502 [debug] [ThreadPool]: SQL status: COMMIT in 0.004 seconds
+[0m04:32:41.307804 [debug] [ThreadPool]: On create_retail_db_raw_core: Close
+[0m04:32:41.309470 [debug] [ThreadPool]: On create_retail_db_raw_raw: Close
+[0m04:32:41.315217 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_retail_db_raw_raw, now list_retail_db_raw)
+[0m04:32:41.316150 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_retail_db_raw_core, now list_retail_db_raw_core)
+[0m04:32:41.316980 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw_raw'
+[0m04:32:41.327563 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw"
+[0m04:32:41.332823 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_core"
+[0m04:32:41.339429 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_raw"
+[0m04:32:41.342190 [debug] [ThreadPool]: On list_retail_db_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m04:32:41.344906 [debug] [ThreadPool]: On list_retail_db_raw_core: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_core"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_core'
+  
+[0m04:32:41.347109 [debug] [ThreadPool]: On list_retail_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m04:32:41.349326 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:32:41.352204 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:32:41.355048 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:32:41.364009 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.014 seconds
+[0m04:32:41.365327 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.014 seconds
+[0m04:32:41.368128 [debug] [ThreadPool]: On list_retail_db_raw: ROLLBACK
+[0m04:32:41.368911 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.014 seconds
+[0m04:32:41.373537 [debug] [ThreadPool]: On list_retail_db_raw_core: ROLLBACK
+[0m04:32:41.375637 [debug] [ThreadPool]: On list_retail_db_raw: Close
+[0m04:32:41.378322 [debug] [ThreadPool]: On list_retail_db_raw_raw: ROLLBACK
+[0m04:32:41.380438 [debug] [ThreadPool]: On list_retail_db_raw_core: Close
+[0m04:32:41.384351 [debug] [ThreadPool]: On list_retail_db_raw_raw: Close
+[0m04:32:41.394731 [debug] [MainThread]: Using postgres connection "master"
+[0m04:32:41.396703 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m04:32:41.398602 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:32:41.407484 [debug] [MainThread]: SQL status: SELECT 0 in 0.009 seconds
+[0m04:32:41.410756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa597bcfca0>]}
+[0m04:32:41.413155 [debug] [MainThread]: On master: ROLLBACK
+[0m04:32:41.415966 [debug] [MainThread]: On master: COMMIT
+[0m04:32:41.418329 [debug] [MainThread]: Using postgres connection "master"
+[0m04:32:41.421393 [debug] [MainThread]: On master: COMMIT
+[0m04:32:41.424645 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m04:32:41.427393 [debug] [MainThread]: On master: Close
+[0m04:32:41.436070 [debug] [Thread-1 (]: Began running node model.retail_dbt_project.stg_online_retail
+[0m04:32:41.440935 [info ] [Thread-1 (]: 1 of 3 START sql view model raw_raw.stg_online_retail .......................... [RUN]
+[0m04:32:41.443642 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_db_raw_raw, now model.retail_dbt_project.stg_online_retail)
+[0m04:32:41.446064 [debug] [Thread-1 (]: Began compiling node model.retail_dbt_project.stg_online_retail
+[0m04:32:41.462679 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dbt_project.stg_online_retail"
+[0m04:32:41.517024 [debug] [Thread-1 (]: Began executing node model.retail_dbt_project.stg_online_retail
+[0m04:32:41.577274 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dbt_project.stg_online_retail"
+[0m04:32:41.609648 [debug] [Thread-1 (]: Using postgres connection "model.retail_dbt_project.stg_online_retail"
+[0m04:32:41.611969 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "node_id": "model.retail_dbt_project.stg_online_retail"} */
+
+  create view "retail_db"."raw_raw"."stg_online_retail__dbt_tmp"
+    
+    
+  as (
+    ﻿select
+    InvoiceNo as invoice_no,
+    StockCode as stock_code,
+    Description as description,
+    Quantity as quantity,
+    InvoiceDate as invoice_date,
+    UnitPrice as unit_price,
+    CustomerID as customer_id,
+    Country as country
+from "retail_db"."raw"."online_retail_II"
+where CustomerID is not null
+  );
+[0m04:32:41.614349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:32:41.622874 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "﻿select"
+LINE 7:     ﻿select
+            ^
+
+[0m04:32:41.625795 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: ROLLBACK
+[0m04:32:41.629255 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: Close
+[0m04:32:41.633722 [debug] [Thread-1 (]: Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:32:41.639403 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cb917cd9-0ab3-40c8-9c85-ba7cf5d6562d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa59b4a9c60>]}
+[0m04:32:41.642391 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model raw_raw.stg_online_retail ................. [[31mERROR[0m in 0.19s]
+[0m04:32:41.645179 [debug] [Thread-1 (]: Finished running node model.retail_dbt_project.stg_online_retail
+[0m04:32:41.647406 [debug] [Thread-7 (]: Marking all children of 'model.retail_dbt_project.stg_online_retail' to be skipped because of status 'error'.  Reason: Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql.
+[0m04:32:41.651172 [debug] [Thread-3 (]: Began running node model.retail_dbt_project.dim_customer
+[0m04:32:41.652650 [debug] [Thread-4 (]: Began running node model.retail_dbt_project.fact_sales
+[0m04:32:41.654807 [info ] [Thread-3 (]: 2 of 3 SKIP relation raw_core.dim_customer ..................................... [[33mSKIP[0m]
+[0m04:32:41.656546 [info ] [Thread-4 (]: 3 of 3 SKIP relation raw_core.fact_sales ....................................... [[33mSKIP[0m]
+[0m04:32:41.658949 [debug] [Thread-3 (]: Finished running node model.retail_dbt_project.dim_customer
+[0m04:32:41.660929 [debug] [Thread-4 (]: Finished running node model.retail_dbt_project.fact_sales
+[0m04:32:41.669540 [debug] [MainThread]: On master: COMMIT
+[0m04:32:41.672775 [debug] [MainThread]: Using postgres connection "master"
+[0m04:32:41.676450 [debug] [MainThread]: On master: COMMIT
+[0m04:32:41.679543 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:32:41.690466 [debug] [MainThread]: SQL status: COMMIT in 0.011 seconds
+[0m04:32:41.694779 [debug] [MainThread]: On master: Close
+[0m04:32:41.698465 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:32:41.702453 [debug] [MainThread]: Connection 'list_retail_db_raw_core' was properly closed.
+[0m04:32:41.706520 [debug] [MainThread]: Connection 'list_retail_db_raw' was properly closed.
+[0m04:32:41.710457 [debug] [MainThread]: Connection 'model.retail_dbt_project.stg_online_retail' was properly closed.
+[0m04:32:41.715103 [info ] [MainThread]: 
+[0m04:32:41.720494 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.55 seconds (0.55s).
+[0m04:32:41.725825 [debug] [MainThread]: Command end result
+[0m04:32:41.847789 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:32:41.865687 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:32:41.895602 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m04:32:41.899269 [info ] [MainThread]: 
+[0m04:32:41.903212 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m04:32:41.905889 [info ] [MainThread]: 
+[0m04:32:41.908531 [error] [MainThread]: [31mFailure in model stg_online_retail (models/staging/stg_online_retail.sql)[0m
+[0m04:32:41.912122 [error] [MainThread]:   Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:32:41.915374 [info ] [MainThread]: 
+[0m04:32:41.919065 [info ] [MainThread]:   compiled code at target/compiled/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:32:41.922822 [info ] [MainThread]: 
+[0m04:32:41.926224 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m04:32:41.931178 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.3924024, "process_in_blocks": "4024", "process_kernel_time": 0.179507, "process_mem_max_rss": "124416", "process_out_blocks": "0", "process_user_time": 3.340828}
+[0m04:32:41.935332 [debug] [MainThread]: Command `dbt run` failed at 04:32:41.935094 after 2.40 seconds
+[0m04:32:41.938605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa59b3c7bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa599e8e7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa597b9f970>]}
+[0m04:32:41.942849 [debug] [MainThread]: Flushing usage events
+[0m04:32:42.237497 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:37:38.353596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac6e37c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac5758f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac5758ee0>]}
+
+
+============================== 04:37:38.361946 | d90184fc-dc52-49d9-a24a-6f8aca46083f ==============================
+[0m04:37:38.361946 [info ] [MainThread]: Running with dbt=1.11.2
+[0m04:37:38.364376 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'version_check': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/.dbt', 'partial_parse': 'True', 'warn_error': 'None', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'target_path': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt seed --profiles-dir /opt/airflow/.dbt', 'log_path': '/opt/airflow/dbt_project/logs', 'write_json': 'True'}
+[0m04:37:38.377580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0995047c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09937acf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09937acee0>]}
+
+
+============================== 04:37:38.385763 | 9b867fe6-7fec-48ad-ae98-90090104c807 ==============================
+[0m04:37:38.385763 [info ] [MainThread]: Running with dbt=1.11.2
+[0m04:37:38.388162 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'warn_error': 'None', 'quiet': 'False', 'empty': 'None', 'no_print': 'None', 'profiles_dir': '/opt/airflow/.dbt', 'indirect_selection': 'eager', 'version_check': 'True', 'write_json': 'True', 'invocation_command': 'dbt seed --profiles-dir /opt/airflow/.dbt', 'introspect': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt_project/logs', 'use_colors': 'True', 'log_format': 'default', 'partial_parse': 'True', 'target_path': 'None', 'log_cache_events': 'False'}
+[0m04:37:38.656747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd90184fc-dc52-49d9-a24a-6f8aca46083f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac5759ea0>]}
+[0m04:37:38.675561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09937adea0>]}
+[0m04:37:38.737501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd90184fc-dc52-49d9-a24a-6f8aca46083f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac57af640>]}
+[0m04:37:38.740880 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m04:37:38.757255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0993803640>]}
+[0m04:37:38.760525 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m04:37:38.822906 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m04:37:38.841814 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m04:37:39.150369 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:37:39.150503 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:37:39.152756 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:37:39.152754 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:37:39.155319 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:37:39.155881 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:37:39.212255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0991b55e40>]}
+[0m04:37:39.213177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd90184fc-dc52-49d9-a24a-6f8aca46083f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac3765e40>]}
+[0m04:37:39.443426 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:37:39.446007 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:37:39.462050 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:37:39.464053 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:37:39.523234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09937adc00>]}
+[0m04:37:39.524750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd90184fc-dc52-49d9-a24a-6f8aca46083f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac5759c00>]}
+[0m04:37:39.527382 [info ] [MainThread]: Found 3 models, 1 seed, 463 macros
+[0m04:37:39.529090 [info ] [MainThread]: Found 3 models, 1 seed, 463 macros
+[0m04:37:39.530587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099610e3b0>]}
+[0m04:37:39.531664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd90184fc-dc52-49d9-a24a-6f8aca46083f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac64963b0>]}
+[0m04:37:39.536095 [info ] [MainThread]: 
+[0m04:37:39.537822 [info ] [MainThread]: 
+[0m04:37:39.540111 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:37:39.541567 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:37:39.543748 [info ] [MainThread]: 
+[0m04:37:39.545141 [info ] [MainThread]: 
+[0m04:37:39.547711 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:37:39.548919 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:37:39.553562 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:37:39.555399 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:37:39.602268 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:37:39.602192 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:37:39.605358 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:37:39.605549 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:37:39.608860 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:39.608883 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:39.618245 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.009 seconds
+[0m04:37:39.618256 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.009 seconds
+[0m04:37:39.622258 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:37:39.622399 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:37:39.631019 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now list_retail_db_raw_core)
+[0m04:37:39.631228 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now list_retail_db_raw_core)
+[0m04:37:39.632562 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw_raw'
+[0m04:37:39.633331 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw'
+[0m04:37:39.634570 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw_raw'
+[0m04:37:39.634297 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw'
+[0m04:37:39.643886 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_core"
+[0m04:37:39.643519 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_core"
+[0m04:37:39.648391 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_raw"
+[0m04:37:39.648469 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw"
+[0m04:37:39.653610 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_raw"
+[0m04:37:39.653820 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw"
+[0m04:37:39.656917 [debug] [ThreadPool]: On list_retail_db_raw_core: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_core"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_core'
+  
+[0m04:37:39.656719 [debug] [ThreadPool]: On list_retail_db_raw_core: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_core"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_core'
+  
+[0m04:37:39.659361 [debug] [ThreadPool]: On list_retail_db_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m04:37:39.659338 [debug] [ThreadPool]: On list_retail_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m04:37:39.661555 [debug] [ThreadPool]: On list_retail_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m04:37:39.661698 [debug] [ThreadPool]: On list_retail_db_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m04:37:39.663957 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:37:39.663995 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:37:39.666628 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:39.666191 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:39.668846 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:39.668784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:39.683159 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.019 seconds
+[0m04:37:39.684455 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.020 seconds
+[0m04:37:39.686617 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.020 seconds
+[0m04:37:39.687572 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.021 seconds
+[0m04:37:39.690125 [debug] [ThreadPool]: On list_retail_db_raw_core: ROLLBACK
+[0m04:37:39.690616 [debug] [ThreadPool]: On list_retail_db_raw_core: ROLLBACK
+[0m04:37:39.691037 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.022 seconds
+[0m04:37:39.691479 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.023 seconds
+[0m04:37:39.694475 [debug] [ThreadPool]: On list_retail_db_raw_raw: ROLLBACK
+[0m04:37:39.695050 [debug] [ThreadPool]: On list_retail_db_raw: ROLLBACK
+[0m04:37:39.697643 [debug] [ThreadPool]: On list_retail_db_raw_core: Close
+[0m04:37:39.698252 [debug] [ThreadPool]: On list_retail_db_raw_core: Close
+[0m04:37:39.701449 [debug] [ThreadPool]: On list_retail_db_raw: ROLLBACK
+[0m04:37:39.701675 [debug] [ThreadPool]: On list_retail_db_raw_raw: ROLLBACK
+[0m04:37:39.705648 [debug] [ThreadPool]: On list_retail_db_raw_raw: Close
+[0m04:37:39.705641 [debug] [ThreadPool]: On list_retail_db_raw: Close
+[0m04:37:39.710895 [debug] [ThreadPool]: On list_retail_db_raw: Close
+[0m04:37:39.711615 [debug] [ThreadPool]: On list_retail_db_raw_raw: Close
+[0m04:37:39.724221 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:39.725281 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:39.728009 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m04:37:39.729654 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m04:37:39.730637 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:37:39.732609 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:37:39.742531 [debug] [MainThread]: SQL status: SELECT 0 in 0.012 seconds
+[0m04:37:39.744008 [debug] [MainThread]: SQL status: SELECT 0 in 0.011 seconds
+[0m04:37:39.746727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09909329e0>]}
+[0m04:37:39.748476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd90184fc-dc52-49d9-a24a-6f8aca46083f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ac2836020>]}
+[0m04:37:39.749976 [debug] [MainThread]: On master: ROLLBACK
+[0m04:37:39.751936 [debug] [MainThread]: On master: ROLLBACK
+[0m04:37:39.753119 [debug] [MainThread]: On master: COMMIT
+[0m04:37:39.755640 [debug] [MainThread]: On master: COMMIT
+[0m04:37:39.756659 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:39.759170 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:39.760113 [debug] [MainThread]: On master: COMMIT
+[0m04:37:39.762937 [debug] [MainThread]: On master: COMMIT
+[0m04:37:39.764870 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m04:37:39.767742 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m04:37:39.768529 [debug] [MainThread]: On master: Close
+[0m04:37:39.771589 [debug] [MainThread]: On master: Close
+[0m04:37:39.781835 [debug] [Thread-1 (]: Began running node seed.retail_dbt_project.online_retail_II
+[0m04:37:39.785730 [debug] [Thread-1 (]: Began running node seed.retail_dbt_project.online_retail_II
+[0m04:37:39.786004 [info ] [Thread-1 (]: 1 of 1 START seed file raw.online_retail_II .................................... [RUN]
+[0m04:37:39.790271 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_db_raw, now seed.retail_dbt_project.online_retail_II)
+[0m04:37:39.790072 [info ] [Thread-1 (]: 1 of 1 START seed file raw.online_retail_II .................................... [RUN]
+[0m04:37:39.793797 [debug] [Thread-1 (]: Began compiling node seed.retail_dbt_project.online_retail_II
+[0m04:37:39.793995 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_db_raw_raw, now seed.retail_dbt_project.online_retail_II)
+[0m04:37:39.797667 [debug] [Thread-1 (]: Began executing node seed.retail_dbt_project.online_retail_II
+[0m04:37:39.797673 [debug] [Thread-1 (]: Began compiling node seed.retail_dbt_project.online_retail_II
+[0m04:37:39.801608 [debug] [Thread-1 (]: Began executing node seed.retail_dbt_project.online_retail_II
+[0m04:37:45.887898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2a1d0fc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2a0464f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2a0464ee0>]}
+
+
+============================== 04:37:45.896202 | 0e97794b-4e74-4090-ac80-c582a8d218e5 ==============================
+[0m04:37:45.896202 [info ] [MainThread]: Running with dbt=1.11.2
+[0m04:37:45.898074 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'quiet': 'False', 'profiles_dir': '/opt/airflow/.dbt', 'warn_error': 'None', 'version_check': 'True', 'log_path': '/opt/airflow/dbt_project/logs', 'log_cache_events': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/.dbt', 'static_parser': 'True', 'empty': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'fail_fast': 'False'}
+[0m04:37:46.200764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29f733130>]}
+[0m04:37:46.297553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2a2da9300>]}
+[0m04:37:46.300646 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m04:37:46.381941 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m04:37:46.695595 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:37:46.698295 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m04:37:46.700483 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:37:46.757057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29e741e70>]}
+[0m04:37:46.967423 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:37:46.977061 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:37:47.010100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29e786740>]}
+[0m04:37:47.012455 [info ] [MainThread]: Found 3 models, 1 seed, 463 macros
+[0m04:37:47.014646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29e7b7e20>]}
+[0m04:37:47.017792 [info ] [MainThread]: 
+[0m04:37:47.019756 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:37:47.021243 [info ] [MainThread]: 
+[0m04:37:47.023217 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:37:47.031670 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:37:47.032619 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:37:47.079141 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:37:47.079751 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:37:47.081302 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:37:47.082999 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:37:47.085001 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:47.086391 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:47.093275 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.008 seconds
+[0m04:37:47.094703 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.008 seconds
+[0m04:37:47.096955 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:37:47.099624 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:37:47.104490 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now list_retail_db_raw_raw)
+[0m04:37:47.105422 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now list_retail_db_raw)
+[0m04:37:47.106327 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw_core'
+[0m04:37:47.115080 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_raw"
+[0m04:37:47.118917 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw"
+[0m04:37:47.123757 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_core"
+[0m04:37:47.125610 [debug] [ThreadPool]: On list_retail_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m04:37:47.127445 [debug] [ThreadPool]: On list_retail_db_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m04:37:47.129357 [debug] [ThreadPool]: On list_retail_db_raw_core: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_core"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_core'
+  
+[0m04:37:47.131249 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:37:47.132867 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:37:47.134554 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:37:47.143739 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.011 seconds
+[0m04:37:47.144513 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.013 seconds
+[0m04:37:47.147333 [debug] [ThreadPool]: On list_retail_db_raw: ROLLBACK
+[0m04:37:47.148143 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.014 seconds
+[0m04:37:47.150820 [debug] [ThreadPool]: On list_retail_db_raw_raw: ROLLBACK
+[0m04:37:47.152905 [debug] [ThreadPool]: On list_retail_db_raw: Close
+[0m04:37:47.156076 [debug] [ThreadPool]: On list_retail_db_raw_core: ROLLBACK
+[0m04:37:47.158580 [debug] [ThreadPool]: On list_retail_db_raw_raw: Close
+[0m04:37:47.162120 [debug] [ThreadPool]: On list_retail_db_raw_core: Close
+[0m04:37:47.171618 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:47.173927 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m04:37:47.176242 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:37:47.185483 [debug] [MainThread]: SQL status: SELECT 0 in 0.009 seconds
+[0m04:37:47.189234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29e743730>]}
+[0m04:37:47.191956 [debug] [MainThread]: On master: ROLLBACK
+[0m04:37:47.194626 [debug] [MainThread]: On master: COMMIT
+[0m04:37:47.197114 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:47.199111 [debug] [MainThread]: On master: COMMIT
+[0m04:37:47.202297 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m04:37:47.204660 [debug] [MainThread]: On master: Close
+[0m04:37:47.214044 [debug] [Thread-1 (]: Began running node model.retail_dbt_project.stg_online_retail
+[0m04:37:47.216440 [info ] [Thread-1 (]: 1 of 3 START sql view model raw_raw.stg_online_retail .......................... [RUN]
+[0m04:37:47.219051 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_db_raw_core, now model.retail_dbt_project.stg_online_retail)
+[0m04:37:47.221569 [debug] [Thread-1 (]: Began compiling node model.retail_dbt_project.stg_online_retail
+[0m04:37:47.233560 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dbt_project.stg_online_retail"
+[0m04:37:47.258648 [debug] [Thread-1 (]: Began executing node model.retail_dbt_project.stg_online_retail
+[0m04:37:47.310492 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dbt_project.stg_online_retail"
+[0m04:37:47.334467 [debug] [Thread-1 (]: Using postgres connection "model.retail_dbt_project.stg_online_retail"
+[0m04:37:47.336658 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "node_id": "model.retail_dbt_project.stg_online_retail"} */
+
+  create view "retail_db"."raw_raw"."stg_online_retail__dbt_tmp"
+    
+    
+  as (
+    ﻿select
+    InvoiceNo as invoice_no,
+    StockCode as stock_code,
+    Description as description,
+    Quantity as quantity,
+    InvoiceDate as invoice_date,
+    UnitPrice as unit_price,
+    CustomerID as customer_id,
+    Country as country
+from "retail_db"."raw"."online_retail_II"
+where CustomerID is not null
+  );
+[0m04:37:47.338935 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:37:47.344996 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "﻿select"
+LINE 7:     ﻿select
+            ^
+
+[0m04:37:47.347182 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: ROLLBACK
+[0m04:37:47.349386 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: Close
+[0m04:37:47.353492 [debug] [Thread-1 (]: Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:37:47.357744 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0e97794b-4e74-4090-ac80-c582a8d218e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29c42bac0>]}
+[0m04:37:47.360492 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model raw_raw.stg_online_retail ................. [[31mERROR[0m in 0.14s]
+[0m04:37:47.362893 [debug] [Thread-1 (]: Finished running node model.retail_dbt_project.stg_online_retail
+[0m04:37:47.364932 [debug] [Thread-7 (]: Marking all children of 'model.retail_dbt_project.stg_online_retail' to be skipped because of status 'error'.  Reason: Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql.
+[0m04:37:47.368236 [debug] [Thread-3 (]: Began running node model.retail_dbt_project.dim_customer
+[0m04:37:47.368879 [debug] [Thread-4 (]: Began running node model.retail_dbt_project.fact_sales
+[0m04:37:47.370550 [info ] [Thread-3 (]: 2 of 3 SKIP relation raw_core.dim_customer ..................................... [[33mSKIP[0m]
+[0m04:37:47.372753 [info ] [Thread-4 (]: 3 of 3 SKIP relation raw_core.fact_sales ....................................... [[33mSKIP[0m]
+[0m04:37:47.374811 [debug] [Thread-3 (]: Finished running node model.retail_dbt_project.dim_customer
+[0m04:37:47.376750 [debug] [Thread-4 (]: Finished running node model.retail_dbt_project.fact_sales
+[0m04:37:47.381697 [debug] [MainThread]: On master: COMMIT
+[0m04:37:47.383650 [debug] [MainThread]: Using postgres connection "master"
+[0m04:37:47.385232 [debug] [MainThread]: On master: COMMIT
+[0m04:37:47.386912 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:37:47.392307 [debug] [MainThread]: SQL status: COMMIT in 0.005 seconds
+[0m04:37:47.394611 [debug] [MainThread]: On master: Close
+[0m04:37:47.396964 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:37:47.398763 [debug] [MainThread]: Connection 'list_retail_db_raw_raw' was properly closed.
+[0m04:37:47.400691 [debug] [MainThread]: Connection 'list_retail_db_raw' was properly closed.
+[0m04:37:47.402180 [debug] [MainThread]: Connection 'model.retail_dbt_project.stg_online_retail' was properly closed.
+[0m04:37:47.403905 [info ] [MainThread]: 
+[0m04:37:47.405706 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[0m04:37:47.407957 [debug] [MainThread]: Command end result
+[0m04:37:47.484139 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:37:47.495765 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:37:47.515709 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m04:37:47.518080 [info ] [MainThread]: 
+[0m04:37:47.521016 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m04:37:47.523363 [info ] [MainThread]: 
+[0m04:37:47.525845 [error] [MainThread]: [31mFailure in model stg_online_retail (models/staging/stg_online_retail.sql)[0m
+[0m04:37:47.528294 [error] [MainThread]:   Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:37:47.530726 [info ] [MainThread]: 
+[0m04:37:47.533066 [info ] [MainThread]:   compiled code at target/compiled/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:37:47.535390 [info ] [MainThread]: 
+[0m04:37:47.537802 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m04:37:47.541039 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.7651677, "process_in_blocks": "0", "process_kernel_time": 0.171623, "process_mem_max_rss": "124516", "process_out_blocks": "0", "process_user_time": 3.331516}
+[0m04:37:47.543549 [debug] [MainThread]: Command `dbt run` failed at 04:37:47.543388 after 1.77 seconds
+[0m04:37:47.545778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2a1d0fc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa29f7309a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2a19ebf10>]}
+[0m04:37:47.548175 [debug] [MainThread]: Flushing usage events
+[0m04:37:48.038138 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:37:57.717722 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:37:57.720576 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "node_id": "seed.retail_dbt_project.online_retail_II"} */
+truncate table "retail_db"."raw"."online_retail_II"
+[0m04:37:57.723314 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:37:57.736840 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 0.013 seconds
+[0m04:37:57.744695 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:37:57.747525 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "node_id": "seed.retail_dbt_project.online_retail_II"} */
+truncate table "retail_db"."raw"."online_retail_II"
+[0m04:37:57.750208 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:38:15.577691 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:38:15.580325 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:38:15.725658 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.143 seconds
+[0m04:38:33.597265 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:38:33.600715 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:38:33.731917 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.128 seconds
+[0m04:38:51.521587 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:38:51.524792 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:38:51.651187 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.123 seconds
+[0m04:39:09.338429 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:39:09.341921 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:39:09.470733 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.126 seconds
+[0m04:39:27.206025 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:39:27.209139 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:39:27.337130 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.125 seconds
+[0m04:39:45.033230 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:39:45.036546 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:39:45.173422 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.133 seconds
+[0m04:40:02.853916 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:40:02.857591 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:40:02.985303 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.124 seconds
+[0m04:40:20.729605 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:40:20.732759 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:40:20.859498 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.124 seconds
+[0m04:40:38.663229 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:40:38.666654 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:40:38.798259 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.128 seconds
+[0m04:40:56.518485 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:40:56.521866 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:40:56.650460 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.125 seconds
+[0m04:41:14.267961 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:41:14.271717 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:41:14.402989 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.128 seconds
+[0m04:41:32.020553 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:41:32.024502 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:41:32.151289 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.123 seconds
+[0m04:41:49.934257 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:41:49.937741 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:41:50.075557 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.135 seconds
+[0m04:42:07.695504 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:42:07.699297 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:42:07.833910 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.131 seconds
+[0m04:42:25.469919 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:42:25.473228 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:42:25.601777 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.125 seconds
+[0m04:42:43.339432 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:42:43.343041 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:42:43.477887 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.131 seconds
+[0m04:43:01.304638 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:43:01.308129 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:43:01.437201 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.126 seconds
+[0m04:43:19.080090 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:43:19.083083 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:43:19.208223 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.123 seconds
+[0m04:43:36.891286 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:43:36.894855 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:43:37.020768 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.123 seconds
+[0m04:43:54.729331 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:43:54.732103 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:43:54.860724 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.126 seconds
+[0m04:44:12.760104 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:44:12.763312 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:44:12.905856 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.140 seconds
+[0m04:44:30.660750 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:44:30.664080 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:44:30.797234 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.130 seconds
+[0m04:44:48.675411 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:44:48.678777 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:44:48.823777 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.142 seconds
+[0m04:45:06.633761 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:45:06.637093 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:45:06.767524 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.127 seconds
+[0m04:45:24.427328 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:45:24.430803 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:45:24.556904 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.123 seconds
+[0m04:45:42.211157 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:45:42.214481 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:45:42.343014 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.125 seconds
+[0m04:46:00.145147 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:46:00.147627 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:46:00.273910 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.124 seconds
+[0m04:46:18.002088 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:46:18.005447 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:46:18.135711 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.127 seconds
+[0m04:46:35.977606 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:46:35.981556 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:46:36.115802 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.131 seconds
+[0m04:46:53.779969 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:46:53.783206 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:46:53.911119 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.125 seconds
+[0m04:47:11.604360 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:47:11.607515 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:47:11.742403 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.132 seconds
+[0m04:47:29.466243 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:47:29.469038 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:47:29.598292 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.127 seconds
+[0m04:47:47.527922 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:47:47.530494 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:47:47.691597 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.157 seconds
+[0m04:48:07.036024 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:48:07.038424 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:48:07.169431 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.128 seconds
+[0m04:48:27.323612 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:48:27.326551 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:48:27.434960 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.106 seconds
+[0m04:48:45.200560 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:48:45.204506 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:48:45.315427 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.108 seconds
+[0m04:49:03.033810 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:49:03.036261 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:49:03.144761 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.106 seconds
+[0m04:49:26.828281 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:49:26.832899 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:49:26.996106 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.158 seconds
+[0m04:49:49.500890 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:49:49.504091 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:49:49.627930 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.121 seconds
+[0m04:50:12.417935 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:50:12.421141 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:50:12.561174 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.137 seconds
+[0m04:50:30.750621 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:50:30.753829 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:50:30.885450 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.129 seconds
+[0m04:50:49.917316 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:50:49.920125 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:50:50.041960 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.119 seconds
+[0m04:51:12.981191 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:51:12.984962 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:51:13.208727 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.219 seconds
+[0m04:51:34.953743 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:51:34.956785 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:51:35.092240 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.133 seconds
+[0m04:51:53.837841 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:51:53.841280 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:51:54.002981 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.157 seconds
+[0m04:52:17.041740 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:52:17.045183 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:52:17.237044 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.188 seconds
+[0m04:52:34.740907 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:52:34.744188 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:52:34.854693 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.107 seconds
+[0m04:52:53.122497 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:52:53.125891 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:52:53.258934 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.130 seconds
+[0m04:53:11.316195 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:53:11.318961 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:53:11.531707 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.210 seconds
+[0m04:53:33.125974 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:53:33.129423 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:53:33.281320 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.148 seconds
+[0m04:53:54.157988 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:53:54.160659 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:53:54.303316 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.140 seconds
+[0m04:54:11.669039 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:54:11.671342 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:54:11.802039 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.128 seconds
+[0m04:54:31.263735 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:54:31.267486 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:54:31.394521 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.124 seconds
+[0m04:54:51.630894 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:54:51.634678 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:54:51.768044 [debug] [Thread-1 (]: SQL status: INSERT 0 10000 in 0.130 seconds
+[0m04:54:55.193663 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:54:55.197056 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: 
+          insert into "retail_db"."raw"."online_retail_II" ("Invoice", "StockCode", "Description", "Quantity", "InvoiceDate", "Price", "Customer ID", "Country") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s...
+[0m04:54:55.224746 [debug] [Thread-1 (]: SQL status: INSERT 0 1910 in 0.025 seconds
+[0m04:54:55.243460 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.retail_dbt_project.online_retail_II"
+[0m04:54:55.310503 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: COMMIT
+[0m04:54:55.313634 [debug] [Thread-1 (]: Using postgres connection "seed.retail_dbt_project.online_retail_II"
+[0m04:54:55.316476 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: COMMIT
+[0m04:54:55.330948 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 1017.663 seconds
+[0m04:54:55.336625 [debug] [Thread-1 (]: SQL status: COMMIT in 0.017 seconds
+[0m04:54:55.341816 [debug] [Thread-1 (]: On seed.retail_dbt_project.online_retail_II: Close
+[0m04:54:55.346230 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b867fe6-7fec-48ad-ae98-90090104c807', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0990961c60>]}
+[0m04:54:55.349266 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file raw.online_retail_II ................................ [[32mINSERT 541910[0m in 1035.55s]
+[0m04:54:55.352601 [debug] [Thread-1 (]: Finished running node seed.retail_dbt_project.online_retail_II
+[0m04:54:55.358091 [debug] [MainThread]: On master: COMMIT
+[0m04:54:55.360321 [debug] [MainThread]: Using postgres connection "master"
+[0m04:54:55.362453 [debug] [MainThread]: On master: COMMIT
+[0m04:54:55.364540 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:54:55.370972 [debug] [MainThread]: SQL status: COMMIT in 0.006 seconds
+[0m04:54:55.373132 [debug] [MainThread]: On master: Close
+[0m04:54:55.375612 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:54:55.377870 [debug] [MainThread]: Connection 'list_retail_db_raw_core' was properly closed.
+[0m04:54:55.379852 [debug] [MainThread]: Connection 'list_retail_db_raw_raw' was properly closed.
+[0m04:54:55.381794 [debug] [MainThread]: Connection 'seed.retail_dbt_project.online_retail_II' was properly closed.
+[0m04:54:55.383769 [info ] [MainThread]: 
+[0m04:54:55.385775 [info ] [MainThread]: Finished running 1 seed in 0 hours 17 minutes and 15.84 seconds (1035.84s).
+[0m04:54:55.388238 [debug] [MainThread]: Command end result
+[0m04:54:55.465948 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:54:55.478983 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:54:55.497929 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m04:54:55.499979 [info ] [MainThread]: 
+[0m04:54:55.502158 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:54:55.504262 [info ] [MainThread]: 
+[0m04:54:55.506697 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m04:54:55.509857 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1037.3292, "process_in_blocks": "0", "process_kernel_time": 0.829891, "process_mem_max_rss": "888516", "process_out_blocks": "0", "process_user_time": 1033.0743}
+[0m04:54:55.512268 [debug] [MainThread]: Command `dbt seed` succeeded at 04:54:55.512090 after 1037.33 seconds
+[0m04:54:55.514436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0995047c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099741d6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0994d2c4c0>]}
+[0m04:54:55.516513 [debug] [MainThread]: Flushing usage events
+[0m04:54:55.981568 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:54:59.819881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c85e3bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c6d38ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c6d38e80>]}
+
+
+============================== 04:54:59.827766 | 77cd6a56-2c03-4ce0-8b92-a23e4efe709c ==============================
+[0m04:54:59.827766 [info ] [MainThread]: Running with dbt=1.11.2
+[0m04:54:59.830082 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --profiles-dir /opt/airflow/.dbt', 'use_colors': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt_project/logs', 'log_format': 'default', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/opt/airflow/.dbt', 'version_check': 'True', 'empty': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'target_path': 'None', 'warn_error': 'None'}
+[0m04:55:00.141353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c6d3af50>]}
+[0m04:55:00.221848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c6d3c370>]}
+[0m04:55:00.224677 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m04:55:00.314041 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m04:55:00.650446 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m04:55:00.653299 [debug] [MainThread]: Partial parsing: added file: retail_dbt_project://models/core/schema.yml
+[0m04:55:00.655904 [debug] [MainThread]: Partial parsing: updated file: retail_dbt_project://models/core/fact_sales.sql
+[0m04:55:01.190689 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'fact_sales' in
+package 'retail_dbt_project' (models/core/schema.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m04:55:01.193560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c479d720>]}
+[0m04:55:01.330416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c47d9c00>]}
+[0m04:55:01.507885 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:55:01.519501 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:55:01.555715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c467c970>]}
+[0m04:55:01.558064 [info ] [MainThread]: Found 3 models, 1 seed, 9 data tests, 463 macros
+[0m04:55:01.560241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c467c9d0>]}
+[0m04:55:01.563939 [info ] [MainThread]: 
+[0m04:55:01.566145 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:55:01.568308 [info ] [MainThread]: 
+[0m04:55:01.570617 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:55:01.578944 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:55:01.580129 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db'
+[0m04:55:01.620236 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:55:01.620954 [debug] [ThreadPool]: Using postgres connection "list_retail_db"
+[0m04:55:01.623335 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:55:01.626407 [debug] [ThreadPool]: On list_retail_db: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:55:01.629161 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:55:01.632153 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:55:01.638859 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.010 seconds
+[0m04:55:01.640222 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.008 seconds
+[0m04:55:01.642377 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:55:01.645274 [debug] [ThreadPool]: On list_retail_db: Close
+[0m04:55:01.651126 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now list_retail_db_raw_core)
+[0m04:55:01.651996 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_db, now list_retail_db_raw_raw)
+[0m04:55:01.652826 [debug] [ThreadPool]: Acquiring new postgres connection 'list_retail_db_raw'
+[0m04:55:01.661463 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_core"
+[0m04:55:01.665244 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw_raw"
+[0m04:55:01.669687 [debug] [ThreadPool]: Using postgres connection "list_retail_db_raw"
+[0m04:55:01.672325 [debug] [ThreadPool]: On list_retail_db_raw_core: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_core"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_core'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_core'
+  
+[0m04:55:01.674959 [debug] [ThreadPool]: On list_retail_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m04:55:01.676971 [debug] [ThreadPool]: On list_retail_db_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "list_retail_db_raw"} */
+select
+      'retail_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw'
+    union all
+    select
+      'retail_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw'
+  
+[0m04:55:01.679122 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:55:01.681353 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:55:01.683470 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:55:01.691698 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.012 seconds
+[0m04:55:01.692892 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.012 seconds
+[0m04:55:01.694367 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.011 seconds
+[0m04:55:01.695895 [debug] [ThreadPool]: On list_retail_db_raw_core: ROLLBACK
+[0m04:55:01.698858 [debug] [ThreadPool]: On list_retail_db_raw_raw: ROLLBACK
+[0m04:55:01.701345 [debug] [ThreadPool]: On list_retail_db_raw: ROLLBACK
+[0m04:55:01.703459 [debug] [ThreadPool]: On list_retail_db_raw_core: Close
+[0m04:55:01.705011 [debug] [ThreadPool]: On list_retail_db_raw_raw: Close
+[0m04:55:01.706446 [debug] [ThreadPool]: On list_retail_db_raw: Close
+[0m04:55:01.716740 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:01.719094 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m04:55:01.721744 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:55:01.732377 [debug] [MainThread]: SQL status: SELECT 0 in 0.011 seconds
+[0m04:55:01.736689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c463b340>]}
+[0m04:55:01.738947 [debug] [MainThread]: On master: ROLLBACK
+[0m04:55:01.741174 [debug] [MainThread]: On master: COMMIT
+[0m04:55:01.743414 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:01.745606 [debug] [MainThread]: On master: COMMIT
+[0m04:55:01.748178 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m04:55:01.750361 [debug] [MainThread]: On master: Close
+[0m04:55:01.757311 [debug] [Thread-1 (]: Began running node model.retail_dbt_project.stg_online_retail
+[0m04:55:01.760024 [info ] [Thread-1 (]: 1 of 3 START sql view model raw_raw.stg_online_retail .......................... [RUN]
+[0m04:55:01.762497 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_db_raw, now model.retail_dbt_project.stg_online_retail)
+[0m04:55:01.764776 [debug] [Thread-1 (]: Began compiling node model.retail_dbt_project.stg_online_retail
+[0m04:55:01.776907 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_dbt_project.stg_online_retail"
+[0m04:55:01.798464 [debug] [Thread-1 (]: Began executing node model.retail_dbt_project.stg_online_retail
+[0m04:55:01.844068 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_dbt_project.stg_online_retail"
+[0m04:55:01.871105 [debug] [Thread-1 (]: Using postgres connection "model.retail_dbt_project.stg_online_retail"
+[0m04:55:01.873263 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "retail_dbt", "target_name": "dev", "node_id": "model.retail_dbt_project.stg_online_retail"} */
+
+  create view "retail_db"."raw_raw"."stg_online_retail__dbt_tmp"
+    
+    
+  as (
+    ﻿select
+    InvoiceNo as invoice_no,
+    StockCode as stock_code,
+    Description as description,
+    Quantity as quantity,
+    InvoiceDate as invoice_date,
+    UnitPrice as unit_price,
+    CustomerID as customer_id,
+    Country as country
+from "retail_db"."raw"."online_retail_II"
+where CustomerID is not null
+  );
+[0m04:55:01.875284 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:55:01.880034 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "﻿select"
+LINE 7:     ﻿select
+            ^
+
+[0m04:55:01.882053 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: ROLLBACK
+[0m04:55:01.884474 [debug] [Thread-1 (]: On model.retail_dbt_project.stg_online_retail: Close
+[0m04:55:01.888434 [debug] [Thread-1 (]: Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:55:01.892023 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77cd6a56-2c03-4ce0-8b92-a23e4efe709c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c313ebc0>]}
+[0m04:55:01.894310 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model raw_raw.stg_online_retail ................. [[31mERROR[0m in 0.13s]
+[0m04:55:01.896429 [debug] [Thread-1 (]: Finished running node model.retail_dbt_project.stg_online_retail
+[0m04:55:01.898618 [debug] [Thread-7 (]: Marking all children of 'model.retail_dbt_project.stg_online_retail' to be skipped because of status 'error'.  Reason: Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql.
+[0m04:55:01.902046 [debug] [Thread-3 (]: Began running node model.retail_dbt_project.dim_customer
+[0m04:55:01.902686 [debug] [Thread-4 (]: Began running node model.retail_dbt_project.fact_sales
+[0m04:55:01.904291 [info ] [Thread-3 (]: 2 of 3 SKIP relation raw_core.dim_customer ..................................... [[33mSKIP[0m]
+[0m04:55:01.906335 [info ] [Thread-4 (]: 3 of 3 SKIP relation raw_core.fact_sales ....................................... [[33mSKIP[0m]
+[0m04:55:01.908367 [debug] [Thread-3 (]: Finished running node model.retail_dbt_project.dim_customer
+[0m04:55:01.910283 [debug] [Thread-4 (]: Finished running node model.retail_dbt_project.fact_sales
+[0m04:55:01.915264 [debug] [MainThread]: On master: COMMIT
+[0m04:55:01.917511 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:01.919439 [debug] [MainThread]: On master: COMMIT
+[0m04:55:01.921214 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:55:01.925550 [debug] [MainThread]: SQL status: COMMIT in 0.004 seconds
+[0m04:55:01.927324 [debug] [MainThread]: On master: Close
+[0m04:55:01.929241 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:55:01.930950 [debug] [MainThread]: Connection 'list_retail_db_raw_raw' was properly closed.
+[0m04:55:01.932770 [debug] [MainThread]: Connection 'list_retail_db_raw_core' was properly closed.
+[0m04:55:01.934623 [debug] [MainThread]: Connection 'model.retail_dbt_project.stg_online_retail' was properly closed.
+[0m04:55:01.936907 [info ] [MainThread]: 
+[0m04:55:01.939011 [info ] [MainThread]: Finished running 1 incremental model, 1 table model, 1 view model in 0 hours 0 minutes and 0.37 seconds (0.37s).
+[0m04:55:01.941599 [debug] [MainThread]: Command end result
+[0m04:55:02.018664 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt_project/target/manifest.json
+[0m04:55:02.029492 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt_project/target/semantic_manifest.json
+[0m04:55:02.047902 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt_project/target/run_results.json
+[0m04:55:02.049842 [info ] [MainThread]: 
+[0m04:55:02.051916 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m04:55:02.054019 [info ] [MainThread]: 
+[0m04:55:02.056129 [error] [MainThread]: [31mFailure in model stg_online_retail (models/staging/stg_online_retail.sql)[0m
+[0m04:55:02.058068 [error] [MainThread]:   Database Error in model stg_online_retail (models/staging/stg_online_retail.sql)
+  syntax error at or near "﻿select"
+  LINE 7:     ﻿select
+              ^
+  compiled code at target/run/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:55:02.059920 [info ] [MainThread]: 
+[0m04:55:02.061903 [info ] [MainThread]:   compiled code at target/compiled/retail_dbt_project/models/staging/stg_online_retail.sql
+[0m04:55:02.063541 [info ] [MainThread]: 
+[0m04:55:02.065495 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m04:55:02.067649 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m04:55:02.070387 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.3638415, "process_in_blocks": "304", "process_kernel_time": 0.198958, "process_mem_max_rss": "130860", "process_out_blocks": "0", "process_user_time": 3.621038}
+[0m04:55:02.072586 [debug] [MainThread]: Command `dbt run` failed at 04:55:02.072446 after 2.37 seconds
+[0m04:55:02.074672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c85e3bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c9879300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8c467d690>]}
+[0m04:55:02.076769 [debug] [MainThread]: Flushing usage events
+[0m04:55:02.335704 [debug] [MainThread]: An error was encountered while trying to flush usage events
