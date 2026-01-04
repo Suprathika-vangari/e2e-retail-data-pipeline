@@ -23,8 +23,8 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    ORCHESTRATION LAYER                           │
-│                  Apache Airflow (Scheduler)                      │
+│                    ORCHESTRATION LAYER                          │
+│                  Apache Airflow (Scheduler)                     │
 └────────────────────────┬────────────────────────────────────────┘
                          │
          ┌───────────────┼───────────────┐
@@ -257,12 +257,12 @@ This project demonstrates:
 
 ## 🚀 Future Enhancements
 
-- [ ] **Monitoring:** Add Slack/email alerts for failures
-- [ ] **Visualization:** Build Metabase/Superset dashboard  
-- [ ] **Cloud Migration:** Deploy to Snowflake/Databricks/BigQuery  
-- [ ] **Advanced Modeling:** Implement SCD Type 2 dimensions  
-- [ ] **Data Lineage:** Generate and host dbt docs site  
-- [ ] **Streaming:** Add Kafka for real-time processing
+- **Monitoring:** Add Slack/email alerts for failures
+- **Visualization:** Build Metabase/Superset dashboard
+- **Cloud Migration:** Deploy to Snowflake/Databricks/BigQuery
+- **Advanced Modeling:** Implement SCD Type 2 dimensions
+- **Data Lineage:** Generate and host dbt docs site
+- **Streaming:** Add Kafka for real-time processing
 
 ---
 
@@ -285,4 +285,5 @@ MIT License - Feel free to use this project for learning and portfolio purposes.
 
 - **Dataset:** [Online Retail II Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset) from Kaggle  
 - **Tools:** Apache Airflow, dbt Labs, PostgreSQL, Docker
+
 
