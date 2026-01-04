@@ -1,0 +1,42 @@
+﻿version: 2
+
+models:
+  - name: fact_sales
+    description: 'Granular sales transactions with calculated metrics'
+    columns:
+      - name: invoice_no
+        description: 'Unique invoice identifier'
+        tests:
+          - not_null
+      - name: customer_id
+        description: 'Customer identifier'
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+      - name: quantity
+        description: 'Quantity of items sold'
+        tests:
+          - not_null
+      - name: unit_price
+        description: 'Price per unit'
+        tests:
+          - not_null
+      - name: total_value
+        description: 'Total transaction value (quantity * unit_price)'
+        tests:
+          - not_null
+
+  - name: dim_customer
+    description: 'Customer dimension with country information'
+    columns:
+      - name: customer_id
+        description: 'Unique customer identifier'
+        tests:
+          - unique
+          - not_null
+      - name: country
+        description: 'Customer country'
+        tests:
+          - not_null
