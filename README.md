@@ -19,6 +19,18 @@
 
 ---
 
+## 🎬 Pipeline in Action
+
+**View Live Workflow Runs:** [GitHub Actions Dashboard](https://github.com/Suprathika-vangari/e2e-retail-data-pipeline/actions)
+
+The CI/CD pipeline automatically runs on every commit, executing:
+- ✅ **dbt Seed:** Loads 1M+ retail transactions (5 min)
+- ✅ **dbt Run:** Builds staging and core models with incremental loading (25 min)
+- ✅ **dbt Test:** Validates data quality with 9 automated tests (3 min)
+- ✅ **dbt Docs:** Generates data lineage documentation
+
+**Latest Run Status:** Check the [Actions page](https://github.com/Suprathika-vangari/e2e-retail-data-pipeline/actions) for real-time pipeline execution
+
 ## 🏗️ Architecture
 
 ```
@@ -285,5 +297,6 @@ MIT License - Feel free to use this project for learning and portfolio purposes.
 
 - **Dataset:** [Online Retail II Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset) from Kaggle  
 - **Tools:** Apache Airflow, dbt Labs, PostgreSQL, Docker
+
 
 
