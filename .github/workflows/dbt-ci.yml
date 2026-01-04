@@ -1,4 +1,4 @@
-﻿name: dbt CI/CD Pipeline
+name: dbt CI/CD Pipeline
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   dbt-test:
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres:13
@@ -26,64 +26,64 @@ jobs:
           --health-retries 5
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Install dependencies
-      run: |
-        pip install dbt-core dbt-postgres
+      - name: Install dependencies
+        run: |
+          pip install dbt-core dbt-postgres
 
-            - name: Create CI/CD profiles.yml
-      run: |
-        mkdir -p .dbt
-        cat > .dbt/profiles.yml << EOF
-        retail_dbt:
-          target: dev
-          outputs:
-            dev:
-              type: postgres
-              host: localhost
-              user: retail_user
-              password: retail_pass
-              port: 5432
-              dbname: retail_db
-              schema: raw
-              threads: 4
-        EOF
+      - name: Create CI/CD profiles.yml
+        run: |
+          mkdir -p .dbt
+          cat > .dbt/profiles.yml << EOF
+          retail_dbt:
+            target: dev
+            outputs:
+              dev:
+                type: postgres
+                host: localhost
+                user: retail_user
+                password: retail_pass
+                port: 5432
+                dbname: retail_db
+                schema: raw
+                threads: 4
+          EOF
 
-    - name: Run dbt seed
-      working-directory: ./dbt_project
-      run: |
-        dbt seed --profiles-dir ../.dbt --target dev
-      env:
-        DBT_POSTGRES_HOST: localhost
-        DBT_POSTGRES_USER: retail_user
-        DBT_POSTGRES_PASSWORD: retail_pass
-        DBT_POSTGRES_PORT: 5432
-        DBT_POSTGRES_DBNAME: retail_db
+      - name: Run dbt seed
+        working-directory: ./dbt_project
+        run: |
+          dbt seed --profiles-dir ../.dbt --target dev
+        env:
+          DBT_POSTGRES_HOST: localhost
+          DBT_POSTGRES_USER: retail_user
+          DBT_POSTGRES_PASSWORD: retail_pass
+          DBT_POSTGRES_PORT: 5432
+          DBT_POSTGRES_DBNAME: retail_db
 
-    - name: Run dbt models
-      working-directory: ./dbt_project
-      run: |
-        dbt run --profiles-dir ../.dbt --target dev
+      - name: Run dbt models
+        working-directory: ./dbt_project
+        run: |
+          dbt run --profiles-dir ../.dbt --target dev
 
-    - name: Run dbt tests
-      working-directory: ./dbt_project
-      run: |
-        dbt test --profiles-dir ../.dbt --target dev
+      - name: Run dbt tests
+        working-directory: ./dbt_project
+        run: |
+          dbt test --profiles-dir ../.dbt --target dev
 
-    - name: Generate dbt docs
-      working-directory: ./dbt_project
-      run: |
-        dbt docs generate --profiles-dir ../.dbt --target dev
+      - name: Generate dbt docs
+        working-directory: ./dbt_project
+        run: |
+          dbt docs generate --profiles-dir ../.dbt --target dev
 
-    - name: Upload dbt docs as artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: dbt-docs
-        path: dbt_project/target/
+      - name: Upload dbt docs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dbt-docs
+          path: dbt_project/target/
