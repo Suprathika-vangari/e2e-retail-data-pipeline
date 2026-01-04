@@ -1,0 +1,19 @@
+﻿name: 'retail_dbt_project'
+version: '1.0.0'
+config-version: 2
+profile: 'retail_dbt'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+
+models:
+  retail_dbt_project:
+    staging:
+      +materialized: view
+      +schema: raw
+    core:
+      +materialized: table
+      +schema: core

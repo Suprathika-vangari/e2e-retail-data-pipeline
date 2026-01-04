@@ -1,0 +1,12 @@
+﻿retail_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      user: retail_user
+      password: retail_pass
+      port: 5432
+      dbname: retail_db
+      schema: raw
+      threads: 4
