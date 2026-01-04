@@ -65,7 +65,7 @@ jobs:
         dbt docs generate --profiles-dir ../.dbt --target ci
 
     - name: Upload dbt docs as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dbt-docs
         path: dbt_project/target/
