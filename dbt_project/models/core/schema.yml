@@ -4,7 +4,7 @@ models:
   - name: fact_sales
     description: 'Granular sales transactions with calculated metrics'
     columns:
-                        name: sales_id
+    - name: sales_id
         description: 'Surrogate key (MD5 hash of invoice_no + stock_code)'
         tests:
           - unique
