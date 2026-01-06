@@ -1,11 +1,12 @@
 ﻿{{
     config(
         materialized='incremental',
-        unique_key='invoice_no'
+                unique_key='sales_id'
     )
 }}
 
 select
+         md5(invoice_no || '-' || stock_code) as sales_id,
     invoice_no,
     customer_id,
     stock_code,
